@@ -1,0 +1,297 @@
+﻿body{
+padding:0px;
+margin:0px;
+}
+.display-none
+{
+    display: none;
+    visibility: hidden;
+}
+.myFont
+{
+    color: black;
+    font-family: tahoma,arial,verdana,sans-serif,Lucida Sans;
+}
+.header{
+background-color:#2B587A;
+height:100px;
+color:White!important;
+
+
+}
+.footer{
+background-color:#2B587A;
+color:White;
+position:absolute;
+bottom:0px;
+width:100%;
+}
+.footer .text{
+padding:0.5em;
+text-align:center;
+color:White;
+}
+.header .title{
+font-size:2.5em;
+padding:0.6em;
+float:left;
+}
+.mainCnt{
+b_ackground-color:#eaeaea;
+}
+
+.menuButton{
+background-color:transparent;
+padding:15px;
+margin:4px;
+float:right;
+margin-top:51px;
+font-size:1em;
+font-weight:bold;
+margin-bottom:0px;
+
+}
+
+.menuButton a{
+    text-decoration:none;
+    color:#eaeaea;
+    cursor:pointer;
+}
+
+.menuButton.homeMenuBtn,.menuButton.gameMenuBtn{
+    background-color:#fff;
+}
+.menuButton.homeMenuBtn a,.menuButton.gameMenuBtn a{
+    text-decoration:none;
+     color:#2B587A;
+}
+
+.bigText{
+   width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    background-repeat: no-repeat;
+    font-size:3em;
+    color:white;
+    text-align:center;
+    background-color:#2B587A;
+    line-height:5em;
+}
+.bug {
+    background-image:url("Bug_Sprite_Small.png");
+    width:90px;
+    height:103px;
+    position:absolute;
+    left:-18px;
+    top:-30px;
+    z-index:2;
+    background-position:0px 0px;
+    b_ackground-size: cover;
+}
+.bug.bugSprite1 {
+    background-position:0px 0px;
+}
+
+.bug.bugSprite2 {
+    background-position:0px -103px;
+}
+
+.bug.bugSprite3 {
+    background-position:0px -220px;
+}
+
+.key
+{
+    position:relative;
+    font-size:24px;
+    width: 2.4em;
+    height: 1.8em;
+    line-height: 1.6em;
+    background-color: #2B587A;
+    border: 4px solid #2B587A;
+    border-left-color:#3E7FAD;
+    border-top-color:#3E7FAD;
+    border-right-color:#1A3649;
+    border-bottom-color:#1A3649;
+    margin: 1px;
+    float: left;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+}
+
+.key.blink
+{
+    background-color: #008000;
+    
+    border-left-color:#00AF00;
+    border-top-color:#00AF00;
+    border-right-color:#004900;
+    border-bottom-color:#004900;
+}
+
+.key.pressed
+{
+    border-left-color:#1A3649;
+    border-top-color:#1A3649;
+    
+    border-right-color:#3E7FAD;
+    border-bottom-color:#3E7FAD;
+}
+
+.key.blink.pressed {
+    border-left-color:#004900;
+    border-top-color:#004900;
+    
+    border-right-color:#00AF00;
+    border-bottom-color:#00AF00;
+}
+
+.key.selectMe
+{
+    background-color: #3E7FAD;
+}
+
+.key.rotateLeft
+{
+transform:rotate(15deg);
+-ms-transform:rotate(15deg); /* IE 9 */
+-webkit-transform:rotate(15deg); /* Safari and Chrome */
+} 
+.key.rotateRight
+{
+transform:rotate(-15deg);
+-ms-transform:rotate(-15deg); /* IE 9 */
+-webkit-transform:rotate(-15deg); /* Safari and Chrome */
+} 
+
+.enterKey {
+    border-bottom: 0 none;
+    height: 2.25em;
+    position: absolute;
+    right: -0.2em;
+    top: -2.45em;
+    width: 4.25em;
+}
+
+
+
+.hand {
+	-moz-opacity: 0.5; /* Mozilla 1.6 и ниже */
+	-khtml-opacity: 0.5; /* Konqueror 3.1, Safari 1.1 */
+	opacity: 0.5; /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */
+	width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    background-repeat: no-repeat;
+}
+.leftHand
+{
+    background-image: url("Hands_Left.png");
+    left: 136px;
+    top: 90px;
+    
+}
+
+.rightHand
+{
+    background-image: url("Hands_Right.png");
+    left: 480px;
+    top: 90px;
+}
+
+
+.leftHand.none
+{
+    background-position: 0px 0px;
+}
+
+.leftHand.little
+{
+    background-position: 0px -307px;
+}
+.leftHand.ring
+{
+    background-position: 0px -614px;
+}
+.leftHand.middle
+{
+    background-position: 0px -921px;
+}
+.leftHand.index
+{
+    background-position: 0px -1228px;
+}
+.leftHand.big
+{
+    background-position: 0px -1535px;
+}
+.leftHand.all
+{
+    background-position: 0px -1842px;
+}
+
+/*right fingers*/
+.rightHand.none
+{
+    background-position: 0px 0px;
+}
+.rightHand.little
+{
+    background-position: 0px -307px;
+}
+.rightHand.ring
+{
+    background-position: 0px -614px;
+}
+.rightHand.middle
+{
+    background-position: 0px -921px;
+}
+.rightHand.index
+{
+    background-position: 0px -1228px;
+}
+.rightHand.big
+{
+    background-position: 0px -1535px;
+}
+.rightHand.all
+{
+    background-position: 0px -1842px;
+}
+
+.menuItem
+{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.displayNone
+{
+    display: none;
+}
+
+.tblGirl
+{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tdGirlItem
+{
+    width: 16px;
+    height: 12px;
+}
+
+.tdGirlItemSlc
+{
+    background-color: #2B587A;
+}
+
+.mainMenu {
+    font-size: 3em;
+    color: #2b587a;
+}
