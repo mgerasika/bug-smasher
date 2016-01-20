@@ -386,7 +386,7 @@ nodejs.serverBase.prototype.init = function (){
     this._app = (this._express).call();
     this._app.use(this._express.static(__dirname + "/public"));
     var sessionObj = (this._session).call(this._session, {
-        secret: "mysecret"
+        secret: "mysecret",resave:true,saveUninitialized:false
     });
     this._app.use(sessionObj);
     this._app.use(this._bodyParser.json());
@@ -822,6 +822,12 @@ mvcLocalize.server.server.prototype.init = function (){
             req.session["mySessionId"] = "session id = " + idx++;
         }
         res.render("index.html");
+    }));
+    this._app.get("/game", $CreateAnonymousDelegate(this, function (req, res) {
+        if (req.session["mySessionId"] == undefined) {
+            req.session["mySessionId"] = "session id = " + idx++;
+        }
+        res.render("game.html");
     }));
     this._app.get("/combine", $CreateDelegate(this, this.onCombine));
     this._app.get("/create", $CreateDelegate(this, this.onCreateLangFiles));

@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title>Web Keyboard</title>
+        <link href="client/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="myFont">
+        <div class="header">
+            <a href="index.htm"> <div class="title" style="color:white;">
+                SMASH THE BUG</div></a>
+           
+            <div style="float: right; margin-right: 100px;">
+                <div class="menuButton myFont gameMenuBtn" >
+                    <a href="client/html/game.htm">GAME</a>
+                </div>
+                <div class="menuButton myFont">
+                    <a href="client/html/index.htm">HOME</a></div>
+          
+            </div>
+        </div>
+        <input type="text" id="txt" style="left: -999px; position: absolute; top: -999px;"
+               onkeyup=" this.value = '' " />
+
+        <script src="client/js/framework.min.js" type="text/javascript"></script>
+        <script src="client/js/common.js" type="text/javascript"></script>
+
+        <script src="client/js/base.js" type="text/javascript"></script>
+
+        <script src="client/js/screens/screen_base.js" type="text/javascript"></script>
+
+        <script src="client/js/screens/screen_mainMenu.js" type="text/javascript"></script>
+
+        <script src="client/js/screens/screen_endTutorial.js" type="text/javascript"></script>
+
+        <script src="client/js/screens/screens_part1.js" type="text/javascript"></script>
+
+        <script src="client/js/screens/screens_part2.js" type="text/javascript"></script>
+
+        <script src="client/js/screens/screenManager.js" type="text/javascript"></script>
+
+        <script src="client/js/audio.js" type="text/javascript"></script>
+
+        <script src="client/js/dataManager.js" type="text/javascript"></script>
+
+        <script src="client/js/progressBar.js" type="text/javascript"></script>
+
+        <script src="client/js/fingers.js" type="text/javascript"></script>
+
+        <script src="client/js/lang/lang-en.js" type="text/javascript"></script>
+
+        <script src="client/js/lang/lang-ua.js" type="text/javascript"></script>
+
+        <script src="client/js/loader.js" type="text/javascript"></script>
+
+        <script src="client/js/girl.js" type="text/javascript"></script>
+
+        <script src="client/js/bug.js" type="text/javascript"></script>
+
+        <script src="client/js/app.js" type="text/javascript"></script>
+
+        <div id="bigText" class="bigText myFont display-none">
+        </div>
+        <div id="progressBar" class="display-none">
+        </div>
+        <div class="mainCnt">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="width: 10%;">
+                    </td>
+                    <td valign="top" style="height: 60px;">
+                        <div style="float: right;">
+                            <a id="enBtn" href="game?lang=en">[en]</a>
+                            <a id="uaBtn" href="game?lang=ua">[ua]</a>
+                        </div>
+                    </td>
+                    <td style="width: 10%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td align="center">
+                        <div style="border: 20px solid #2B587A; display: table; min-width: 1020px; padding: 2px;">
+                            <div class="myFont" align="center" id="keyboardDiv" style="float: left; position: relative;"></div>
+                            <div style="clear: both">
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <div class="text myFont">
+                <script type="text/javascript"> writeCopyright(); </script></div>
+        </div>
+        <audio id="sound1" preload="true" src="client/success.wav"></audio>
+        <audio id="sound2" preload="true" src="client/failed.wav"></audio>
+        <audio id="sound3" preload="true" src="client/blink.wav"></audio>
+    </body>
+</html>
