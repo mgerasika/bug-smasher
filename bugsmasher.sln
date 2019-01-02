@@ -1,38 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "razorWebSite", "http://localhost:10306", "{00673990-7930-459A-B517-4ABDF7980A46}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "bugsmasher", ".", "{B669CD8E-BC78-4722-80DB-043AFE2DD074}"
 	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_10306"
-		Debug.AspNetCompiler.PhysicalPath = "razorWebSite\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10306\"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		Debug.AspNetCompiler.VirtualPath = "/bugsmasher"
+		Debug.AspNetCompiler.PhysicalPath = "..\bugsmasher\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\bugsmasher\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_10306"
-		Release.AspNetCompiler.PhysicalPath = "razorWebSite\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_10306\"
+		Release.AspNetCompiler.VirtualPath = "/bugsmasher"
+		Release.AspNetCompiler.PhysicalPath = "..\bugsmasher\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\bugsmasher\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "razorWebSite\"
-		DefaultWebSiteLanguage = "Visual C#"
+		VWDPort = "65016"
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{00673990-7930-459A-B517-4ABDF7980A46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00673990-7930-459A-B517-4ABDF7980A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00673990-7930-459A-B517-4ABDF7980A46}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{00673990-7930-459A-B517-4ABDF7980A46}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B669CD8E-BC78-4722-80DB-043AFE2DD074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B669CD8E-BC78-4722-80DB-043AFE2DD074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
