@@ -216,11 +216,12 @@ function moveXY(x1, y1, x2, y2, handler) {
 
     function showDialog(txt) {
         var bigTxt = document.getElementById("bigText");
+        var xy2 = js.getXY(document.documentElement);
         var xy = js.getXY($keyManager.getEl());
-        bigTxt.style.left = xy.x + "px";
-        bigTxt.style.top = xy.y + "px";
-        bigTxt.style.width = $keyManager.getEl().offsetWidth + "px";
-        bigTxt.style.height = $keyManager.getEl().offsetHeight + "px";
+        bigTxt.style.left =  "0px";
+        bigTxt.style.top = "0px";
+        bigTxt.style.width = "100%";//$keyManager.getEl().offsetWidth + "px";
+        bigTxt.style.height = "100%";//$keyManager.getEl().offsetHeight + "px";
         bigTxt.innerHTML = txt;
         js.removeClass(bigTxt, "display-none");
     }

@@ -456,8 +456,9 @@ keyManagerBase.prototype.init = function() {
     var res = document.getElementById("keyboardDiv");
     function renderRow(rowIdx,startIdx, endIdx, df1) {
 	    if (res.innerHTML == "") {
-		    var row = document.createElement("div");
-		    row.style.clear = "both";
+            var row = document.createElement("div");
+            js.addClass(row, "keyRow")
+		    //row.style.clear = "both";
 		    for (var i = startIdx; i < endIdx; i++) {
 			    var div = document.createElement("div");
 			    js.addClass(div, "key");
@@ -467,9 +468,14 @@ keyManagerBase.prototype.init = function() {
 			    keyObj.setDiv(div);
 
 			    keyObj.setShowText(false);
-			    keyObj.render({});
-		    }
+                keyObj.render({});
+                
 
+               
+		    }
+ var endRow = document.createElement("div");
+			    js.addClass(endRow, "endRow");
+			    row.appendChild(endRow);
 		    df1.appendChild(row);
 	    }
 	    else {

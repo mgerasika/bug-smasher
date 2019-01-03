@@ -21,7 +21,7 @@
     };
 
     this.playWav = function(audio) {
-        /*
+      
         var arr = _audioCache[audio.src];
         if (!arr) {
         _audioCache[audio.src] = arr = [];
@@ -42,7 +42,7 @@
         arr[arr.length] = audioCache;
         }
         audioCache.play();
-        */
+       
         
         //audio.pause();
         //audio.currentTime = 0;

@@ -395,6 +395,9 @@ nodejs.serverBase.prototype.init = function (){
         extended: true
     }));
     this._app.use("/gen", this._express.static(__dirname + "/gen"));
+    this._app.use("/css", this._express.static(__dirname + "/css"));
+    this._app.use("/html", this._express.static(__dirname + "/html"));
+    this._app.use("/js", this._express.static(__dirname + "/js"));
     this._app.use("/lang", this._express.static(__dirname + "/lang"));
     this._app.use("/client", this._express.static(__dirname + "/client"));
     this._app.set("view engine", "html");
@@ -415,6 +418,16 @@ nodejs.serverBase.prototype.init = function (){
         var str = nodejs.trace.inst.getAllTrace();
         res.header("content-type", "text/html");
         res.send(str);
+    }));
+
+    this._app.get("/game", $CreateAnonymousDelegate(this, function (req, res){
+       
+        res.sendfile('client/html/game.html');
+    }));
+
+    this._app.get("/index", $CreateAnonymousDelegate(this, function (req, res){
+       
+        res.sendfile('client/html/index.html');
     }));
 };
 nodejs.serverBase.prototype.start = function (){

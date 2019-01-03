@@ -67,8 +67,6 @@ margin-bottom:0px;
 }
 
 .bigText{
-   width: 300px;
-    height: 200px;
     position: absolute;
     z-index: 2;
     background-repeat: no-repeat;
@@ -76,7 +74,7 @@ margin-bottom:0px;
     color:white;
     text-align:center;
     background-color:#2B587A;
-    line-height:5em;
+    line-height:7em;
 }
 .bug {
     background-image:url("Bug_Sprite_Small.png");
@@ -85,7 +83,7 @@ margin-bottom:0px;
     position:absolute;
     left:-18px;
     top:-30px;
-    z-index:2;
+    z-index:999;
     background-position:0px 0px;
     b_ackground-size: cover;
 }
@@ -100,13 +98,19 @@ margin-bottom:0px;
 .bug.bugSprite3 {
     background-position:0px -220px;
 }
-
+.endRow{
+    clear:both;
+}
+.keyRow{
+    display: flex;
+    flex-direction: row;
+}
 .key
 {
     position:relative;
     font-size:24px;
-    width: 2.4em;
-    height: 1.8em;
+   width:2.5em;
+    height: 2.5em;
     line-height: 1.6em;
     background-color: #2B587A;
     border: 4px solid #2B587A;
@@ -115,11 +119,14 @@ margin-bottom:0px;
     border-right-color:#1A3649;
     border-bottom-color:#1A3649;
     margin: 1px;
-    float: left;
     color: #fff;
     text-align: center;
     vertical-align: middle;
     padding: 0px;
+}
+
+.mainCnt .key{
+    width:100%;
 }
 
 .key.blink
@@ -169,11 +176,11 @@ transform:rotate(-15deg);
 
 .enterKey {
     border-bottom: 0 none;
-    height: 2.25em;
+    height: 2.752em;
     position: absolute;
     right: -0.2em;
-    top: -2.45em;
-    width: 4.25em;
+    top: -2.8em;
+    width: 3.3em!important;
 }
 
 
@@ -192,15 +199,15 @@ transform:rotate(-15deg);
 {
     background-image: url("Hands_Left.png");
     left: 136px;
-    top: 90px;
+    top: 120px;
     
 }
 
 .rightHand
 {
     background-image: url("Hands_Right.png");
-    left: 480px;
-    top: 90px;
+    left: 520px;
+    top: 120px;
 }
 
 
