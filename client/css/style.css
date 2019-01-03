@@ -107,6 +107,7 @@ margin-bottom:0px;
 }
 .key
 {
+    border-radius:8px;
     position:relative;
     font-size:24px;
    width:2.5em;
